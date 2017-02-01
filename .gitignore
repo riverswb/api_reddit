@@ -17,3 +17,6 @@
 .byebug_history
 
 omniauth.rb
+
+# Ignore application configuration
+/config/application.yml

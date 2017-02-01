@@ -32,8 +32,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'omniauth-oauth2', '1.3.1'
 gem 'omniauth-reddit', :git => 'git://github.com/jackdempsey/omniauth-reddit.git'
+gem 'hashie', '3.4.6'
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,6 +47,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'faker'
   gem 'faraday'
+  gem 'pry'
 end
 
 group :development do
