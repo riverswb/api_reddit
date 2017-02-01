@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   get '/auth/reddit', as: 'reddit_login'
   get 'account', to: 'accounts#show'
   delete 'logout', to: 'sessions#destroy'
+  # get 'subreddit', to: 'subreddits#index'
+  # get 'subreddit/:id', to: 'subreddits#show'
+  resources :subreddits, only: [:index, :show]
 end

@@ -1,6 +1,7 @@
 <% if current_user %>
   Hello, <%= current_user.screen_name %><br>
   <%= link_to "View Account Information", account_path %><br>
+  <%= link_to "My Subreddits", subreddits_path %><br>
   <%= link_to "Logout", logout_path, method: :delete %>
 <% else %>
   <%= link_to "Login through Reddit", reddit_login_path %>

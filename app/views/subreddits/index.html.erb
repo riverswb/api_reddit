@@ -1,0 +1,5 @@
+<% @subreddits.each do |subreddit| %>
+  <ul>
+    <li><%= link_to subreddit.name, subreddit_path(subreddit.id) %></li>
+  </ul>
+<% end %>
